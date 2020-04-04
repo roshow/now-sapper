@@ -63,6 +63,8 @@ exports.build = async ({
     console.error('createLambda.config', config)
   })
 
+  console.log(lambda);
+
   const output = {
     ...serve(staticFiles, 'static/', ''),
     ...serve(
