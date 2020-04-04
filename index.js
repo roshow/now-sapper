@@ -25,6 +25,7 @@ exports.build = async ({
   config: rawConfig,
   meta = {}
 }) => {
+  console.log(`I'm Ro. And, now, this is *my* show.`)
   const mountpoint = getMountPoint(entrypoint)
   const entrypointDir = path.join(workPath, mountpoint)
   await download(files, workPath, meta)
